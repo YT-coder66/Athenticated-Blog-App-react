@@ -78,30 +78,7 @@ Yasin Tajali
 
 ## Project Structuer File
 
-Authenticated-Blog-App/
-├── node_modules/
-├── src/
-│ ├── components/
-│ │ ├── Auth/
-│ │ │ ├── LoginPage.jsx
-│ │ │ └── RegisterPage.jsx
-│ │ ├── Blogs/
-│ │ │ └── BlogEditorPage.jsx
-│ │ ├── Navbar.css
-│ │ ├── Navbar.jsx
-│ │ └── Spinner.jsx
-│ ├── Context/
-│ ├── Pages/
-│ ├── App.css
-│ ├── App.jsx
-│ └── main.jsx
-├── .gitignore
-├── eslint.config.js
-├── index.html
-├── package-lock.json
-├── package.json
-├── README.md
-└── vite.confi
+![Project File Structure](./src/Screenshots/Structure.png)
 
 
 ---
