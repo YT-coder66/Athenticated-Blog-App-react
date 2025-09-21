@@ -1,0 +1,159 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f6fa;
+  margin: 0;
+  padding: 0;
+  color: #2f3640;
+}
+
+a {
+  text-decoration: none;
+  color: #40739e;
+}
+
+nav {
+  background-color: #2f3640;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  margin-left: 1rem;
+  color: #f5f6fa;
+}
+
+nav span {
+  margin-right: 1rem;
+}
+
+button {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background-color: #40739e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+form {
+  background: white;
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+form h2 {
+  margin-bottom: 1.5rem;
+}
+
+form input, form textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border: 1px solid #dcdde1;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+form textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.post-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.post-list li {
+  background: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.post-list li a {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.post-detail {
+  background: white;
+  padding: 2rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #40739e;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.post-card {
+  background: white;
+  padding: 1.2rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 7px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+}
+
+.post-card h3 {
+  margin: 0 0 0.7rem 0;
+  font-weight: 600;
+  color: #2f3640;
+}
+
+.post-card p {
+  flex-grow: 1;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.post-card a {
+  color: #40739e;
+  font-weight: 600;
+  align-self: flex-start;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 0.8rem;
+  }
+}
+
