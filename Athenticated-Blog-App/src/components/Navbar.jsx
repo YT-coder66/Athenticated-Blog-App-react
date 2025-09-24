@@ -20,7 +20,6 @@ export default function Navbar() {
       <nav style={styles.nav}>
         <div style={styles.logo} onClick={() => navigate('/')}>MyBlogCMS</div>
 
-        {/* Hamburger icon for mobile */}
         <div style={styles.hamburger} onClick={toggleMenu}>
           <div
             style={{
@@ -92,9 +91,9 @@ export default function Navbar() {
   );
 }
 
-const primaryColor = '#2c3e50';  // Dark blue-gray
-const accentColor = '#27ae60';   // Green accent
-const textColor = '#ecf0f1';     // Light gray text
+const primaryColor = '#2c3e50';  
+const accentColor = '#27ae60';   
+const textColor = '#ecf0f1';     
 
 const styles = {
   nav: {
@@ -122,7 +121,7 @@ const styles = {
     alignItems: 'center',
     gap: '2rem',
 
-    // Desktop only by default
+
     '@media (max-width: 768px)': {
       display: 'none',
     },
@@ -179,7 +178,7 @@ const styles = {
     transition: 'all 0.3s ease',
   },
 
-  // Media queries - fallback for CSS-in-JS limitation (since inline styles can't do media queries)
+  
   '@media (max-width: 768px)': {
     linksContainer: {
       display: 'none',
