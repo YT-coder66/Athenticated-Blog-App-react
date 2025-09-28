@@ -12,8 +12,6 @@ Yasin Tajali
 
 - LinkedIn: [linkedin_page](https://www.linkedin.com/in/yasin-tajali-malek-jahan-reactdev/)
 
-- Email: pr0grmer6cd@gmail.com
-
 
 ---
 
