@@ -16,7 +16,6 @@ function savePostsToStorage(posts) {
 export default function BlogEditorPage() {
   const { id } = useParams();
   const navigate = useNavigate();
-
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
   const [loading, setLoading] = useState(false);
