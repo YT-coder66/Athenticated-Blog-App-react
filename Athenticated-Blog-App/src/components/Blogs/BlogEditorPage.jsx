@@ -22,7 +22,6 @@ export default function BlogEditorPage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  // Load post if editing
   useEffect(() => {
     if (id) {
       setLoading(true);
@@ -55,11 +54,9 @@ export default function BlogEditorPage() {
     setTimeout(() => {
       const posts = getPostsFromStorage();
       if (id) {
-        // Update existing
         const updatedPosts = posts.map(p => (p.id === Number(id) ? { ...p, title, content } : p));
         savePostsToStorage(updatedPosts);
       } else {
-        // Create new
         const newPost = { id: Date.now(), title, content };
         posts.push(newPost);
         savePostsToStorage(posts);

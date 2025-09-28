@@ -22,7 +22,6 @@ export default function DashboardPage() {
 
   useEffect(() => {
     setLoading(true);
-    // Simulate fetch
     setTimeout(() => {
       setPosts(getPostsFromStorage());
       setLoading(false);
